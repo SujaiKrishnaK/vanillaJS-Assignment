@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+   
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Data Weave</title>
+  </head>
+  <body>
+    <div id="mySidenav" class="sidenav">
+        <h3>Views</h3>
+        <a href="javascript:void(0)" class="closebtn" id="closeSide">&times;</a>
+        <a href="#" id="all_products" name="allmatchedproducts" value="all_products">All Matched Products &nbsp; <span id="all_productscount"></span></a>
+        <a href="#" id="increase_opportunity" name="margingainopportunities"  value="increase_opportunity">Margin Gain Opportunuties &nbsp;<span id="increase_opportunity_count"></span> </a>
+      </div>
+      <span id="hammenu"><span class="material-icons menubtn">
+        menu
+        </span></span>
+      <div id="main">
+        <div class=row>
+          <div class="col-lg-6">
+            <search-sort></search-sort>
+            <mid-section id="midtag" selectedview=""></mid-section>
+            <pagination-chip id="paging" productsCount=""></pagination-chip>
+          </div>
+          <div class="col-lg-6">
+            <main-section></main-section>
+          </div>
+        </div>
+      </div>
+      <script src="./components/search-sort/search-sort.js"></script>
+      <script src="./components/mid-section/mid-section.js"></script>
+      <script src="./components/paging/pagination.js"></script>
+      <script src="./components/main-section/main-section.js"></script>
+      <script src="https://use.fontawesome.com/ecf3c0b4a5.js"></script>
+      <script type="module" src="../src/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
+</html>

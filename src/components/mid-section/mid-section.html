@@ -1,0 +1,40 @@
+<div class="container" style="width:550px;margin-left:200px;">
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-lg-9">
+                    <span>&#8377;</span> <span style="color:cornflowerblue">${data.available_price}</span>
+                    <div>${data.bundle_name}</div>
+                    <span>${data.sku}</span>
+                    <span>Increases Upto ${data.price_opportunity_increase_by} (${data.price_opportunity_increase_by_percentage})</span>
+                    <span>opportunity Exists from last ${data.price_opportunity_days} days(s)</span>
+                </div>
+                <div class="col-lg-3">
+                    <img src="${data.thumbnail}"  height="100" weight="100"  alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div style="width:300px;margin-left:210px">
+    <div class="row">
+    <div class="col-lg-9">
+    <div class="input-group mb-3">
+    <input type="text" onchange="searchCall(event)" class="form-control" placeholder="Search">
+            <div class="input-group-append">
+            <span class="input-group-text" id="basic-addon2">
+            <span class="material-icons">
+                search
+             </span>
+            </span>
+            </div>
+    </div>
+    </div>
+    <div class="col-lg-3">
+    <span class="material-icons">
+    sort
+    </span>
+    </div>  
+    </div>
+    </div>
