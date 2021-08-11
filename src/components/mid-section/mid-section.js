@@ -21,10 +21,12 @@ class midsec extends HTMLElement {
       })  
 
       var page = document.querySelector('pagination-chip');
-      page.addEventListener('click',(ev) => {
-        console.log(ev.detail,'page');
-        let start = ev.detail * 20;
-        let limit = ev.detail * 20 + 20;
+      page.addEventListener('click',(evt) => {
+        console.log(evt.detail.nums,'page');
+        evt.stopPropagation();
+        evt.preventDefault();
+        let start = evt.detail.nums * 20;
+        let limit = evt.detail.nums * 20 + 20;
         this.attributeChangedCallback(undefined,undefined,this.changedView,undefined,undefined,start,limit)
       })
     }
