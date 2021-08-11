@@ -33,7 +33,7 @@ class mainsec extends HTMLElement {
         data.highest_price_value == 'NA' ? highestPrice = "-" : highestPrice = data.highest_price_value;
       this.innerHTML = `
       <div style="width:200px;">
-      <div class="container" id="card-box" style="width:550px;margin:0 0 0 70px;">
+      <div class="container" id="card-box" style="width:550px;margin:0 0 0 70px;position:fixed">
       <div class="card">
           <div class="card-body">
               <div class="row">
